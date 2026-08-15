@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-08-15T05:21:33.512536+00:00",
+  "count": 2,
+  "prompts": [
+    {
+      "id": "PROMPT-20260815-131701",
+      "name": "建立自动提示词仓库技能",
+      "slug": "prompt-repository-skill",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/general/PROMPT-20260815-131701-prompt-repository-skill.md",
+      "sha256": "9291807707f6da181b9ebebd8be8aa85d5ec3daba4d69626eee94e308f605a48",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-131700",
+      "name": "建立并维护 references 知识库与知识图谱",
+      "slug": "references-knowledge-management",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-131700-references-knowledge-management.md",
+      "sha256": "02f498b4fc31ef572364b6e825cafda42b685f42ff482f65cd23d49c1ee9d76b",
+      "duplicate_of": null
+    }
+  ]
+}

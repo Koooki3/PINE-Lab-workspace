@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "accepted_at": "2026-08-15T05:21:33.273845+00:00",
+  "files": {
+    "references/1801.01290v2.pdf": {
+      "source_id": "src-6ff57a7ba7",
+      "sha256": "5c33fae017d02f7025730f05198d4a6b103402822c8bbf48cbc5d8a0474c336a",
+      "bytes": 4388102,
+      "suffix": ".pdf"
+    },
+    "references/2410.24164v4.pdf": {
+      "source_id": "src-0c38a99502",
+      "sha256": "fbdfba56258bdbd220207ba63410c6c943e43a73e97a7a5a47ca0bc74204f821",
+      "bytes": 7893845,
+      "suffix": ".pdf"
+    },
+    "references/2507.07969v4.pdf": {
+      "source_id": "src-6d36731cb8",
+      "sha256": "4dc52cbf16518153ae68a3e83672dd5e6325d9e20009434b1876e2bb8c2a39e9",
+      "bytes": 15681238,
+      "suffix": ".pdf"
+    },
+    "references/hil-serl-paper.pdf": {
+      "source_id": "src-2a910657cd",
+      "sha256": "bf8f7c3f359e4e3985fe78518d3b12c8392d310ac35eea3a168cbb5de0897e25",
+      "bytes": 22143343,
+      "suffix": ".pdf"
+    }
+  }
+}

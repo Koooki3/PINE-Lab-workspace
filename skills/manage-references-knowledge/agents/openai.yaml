@@ -1,0 +1,4 @@
+interface:
+  display_name: "References 知识库维护"
+  short_description: "增量维护 references 知识库、知识图谱与学习文档"
+  default_prompt: "Use $manage-references-knowledge to update the references knowledge base and regenerate PINE.docx."
