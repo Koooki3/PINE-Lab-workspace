@@ -1,14 +1,14 @@
 # 来源账本
 
-访问日期均为 2026-08-15。S1-S4 为仓库内一手论文，书目信息以原文为准；其余为补全前置知识的一手论文或官方页面。
+访问日期均为 2026-08-15。S1-S4 为仓库内一手论文：日常检索读取 `references/Markdown/` 的逐页转换文件，哈希和页锚点通过后才用于知识更新；源 PDF 保留为公式、图表、页序与视觉版式的最终核对依据。其余为补全前置知识的一手论文或官方页面。
 
-[S1] Haarnoja T, Zhou A, Abbeel P, Levine S. *Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor*. arXiv:1801.01290v2, 2018. Local: `1801.01290v2.pdf`. https://arxiv.org/abs/1801.01290
+[S1] Haarnoja T, Zhou A, Abbeel P, Levine S. *Soft Actor-Critic: Off-Policy Maximum Entropy Deep Reinforcement Learning with a Stochastic Actor*. arXiv:1801.01290v2, 2018. Local reading: `Markdown/1801.01290v2/1801.01290v2.md`; source: `1801.01290v2.pdf`. https://arxiv.org/abs/1801.01290
 
-[S2] Black K, Brown N, Driess D, et al. *π0: A Vision-Language-Action Flow Model for General Robot Control*. arXiv:2410.24164v4. Local: `2410.24164v4.pdf`. https://arxiv.org/abs/2410.24164
+[S2] Black K, Brown N, Driess D, et al. *π0: A Vision-Language-Action Flow Model for General Robot Control*. arXiv:2410.24164v4. Local reading: `Markdown/2410.24164v4/2410.24164v4.md`; source: `2410.24164v4.pdf`. https://arxiv.org/abs/2410.24164
 
-[S3] Li Q, Zhou Z, Levine S. *Reinforcement Learning with Action Chunking*. arXiv:2507.07969v4 / NeurIPS 2025. Local: `2507.07969v4.pdf`. https://arxiv.org/abs/2507.07969
+[S3] Li Q, Zhou Z, Levine S. *Reinforcement Learning with Action Chunking*. arXiv:2507.07969v4 / NeurIPS 2025. Local reading: `Markdown/2507.07969v4/2507.07969v4.md`; source: `2507.07969v4.pdf`. https://arxiv.org/abs/2507.07969
 
-[S4] Luo J, Xu C, Wu J, Levine S. *Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning*. arXiv:2410.21845, 2024. Local: `hil-serl-paper.pdf`. https://arxiv.org/abs/2410.21845
+[S4] Luo J, Xu C, Wu J, Levine S. *Precise and Dexterous Robotic Manipulation via Human-in-the-Loop Reinforcement Learning*. arXiv:2410.21845, 2024. Local reading: `Markdown/hil-serl-paper/hil-serl-paper.md`; source: `hil-serl-paper.pdf`. https://arxiv.org/abs/2410.21845
 
 [S5] Zhao T Z, Kumar V, Levine S, Finn C. *Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware*. arXiv:2304.13705, 2023. https://arxiv.org/abs/2304.13705
 

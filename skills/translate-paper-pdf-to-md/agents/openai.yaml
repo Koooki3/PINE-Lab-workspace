@@ -1,0 +1,4 @@
+interface:
+  display_name: "Translate Paper PDF to MD"
+  short_description: "Convert academic PDFs into traceable Markdown"
+  default_prompt: "Use $translate-paper-pdf-to-md to convert an academic PDF into source-faithful Markdown with page anchors and assets."

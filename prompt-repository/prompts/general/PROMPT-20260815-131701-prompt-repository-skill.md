@@ -43,7 +43,7 @@ normalized_prompt: |-
 
 ## 2. 完整提示词 / Full Prompt
 
-```text
+`````text
 同时新增提示词保存仓库级skill，用以保存每一次任务用户输入的提示词，具有完成的更新逻辑的过程文件删除逻辑，新增后需要补全含本指令和前述指令的保存。参考以下建议和模板构建skill，检查无误后执行一次补全保存，后续所有线程都应自动完成提示词保存工作。建议和模板：
 如果你的目标是构建一个 **Prompt Repository Skill**，让它在每次用户提供一个值得保存的提示词时，都按照统一格式归档，我建议采用 **Markdown + YAML Front Matter**。这样既方便人类阅读，也方便未来程序化检索、Git 版本管理、Skill 自动解析和迁移到数据库。
 
@@ -303,7 +303,7 @@ normalized_prompt: |
 这样可以同时满足**原始记录可追溯性**和**Prompt 工程优化**。尤其适合你以后做 Prompt 版本迭代，不会出现“优化之后已经不知道用户当初到底输入了什么”的问题。
 
 如果准备把它正式做成一个可安装的仓库 Skill，我会进一步建议把数据结构分成 **`SKILL.md + prompt-template.md + prompts-index.json + 单 Prompt Markdown 文件`** 四层，这样后续让 AI 自动执行保存、搜索、更新、去重和版本控制会比较干净。
-```
+`````
 
 ## 3. 输入变量 / Input Variables
 

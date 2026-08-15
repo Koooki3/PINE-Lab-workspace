@@ -1,0 +1,14 @@
+{
+  "workbench.editorAssociations": {
+    "*.md": "markdown-preview-enhanced"
+  },
+  "markdown-preview-enhanced.previewMode": "Previews Only",
+  "markdown-preview-enhanced.automaticallyShowPreviewOfMarkdownBeingEdited": true,
+  "markdown-preview-enhanced.disableAutoPreviewForFilePatterns": [],
+  "markdown-preview-enhanced.markdownParser": "markdown-it",
+  "markdown-preview-enhanced.mathRenderingOption": "KaTeX",
+  "markdown-preview-enhanced.mathInlineDelimiters": [["$", "$"]],
+  "markdown-preview-enhanced.mathBlockDelimiters": [["$$", "$$"]],
+  "markdown-preview-enhanced.liveUpdate": true,
+  "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": true
+}

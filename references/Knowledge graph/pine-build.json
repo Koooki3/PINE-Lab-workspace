@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "chapters": [
+    "00-index.md",
+    "01-foundations.md",
+    "02-reinforcement-learning.md",
+    "03-robot-learning.md",
+    "04-paper-guides.md",
+    "05-knowledge-graph.md",
+    "06-source-ledger.md",
+    "07-learning-path.md"
+  ],
+  "chapter_sha256": {
+    "00-index.md": "a88fe3208a9755e5e02cd60e66bb64056b2271996b2122fcc768f1e19d61e188",
+    "01-foundations.md": "20406663ca7e82ee8647bef35e444d94c1ef9c7c0efff03a50cd5e4507ad6050",
+    "02-reinforcement-learning.md": "a8ede151153e0c82f76f3a1b340114209831c77ce609375a8f5417011a541156",
+    "03-robot-learning.md": "7ed0e569e720c440f68952f540d441127c0cf736d62099a6b96bfc17fe00e8a9",
+    "04-paper-guides.md": "326e50c5db21915ac4b470cf70af6ff520889c453287f484630adba65245740b",
+    "05-knowledge-graph.md": "0b2e5556e47f86fdbc313b142f15303b063df8eeede4b8796498931b0a56745b",
+    "06-source-ledger.md": "348668189c3392ddc16666e6a49fdc558bb9da146259fccb048c0740656fe470",
+    "07-learning-path.md": "81ede8883800d023e994325cd51f3e1d6abe9cfad71c282063b336d6e754d645"
+  }
+}

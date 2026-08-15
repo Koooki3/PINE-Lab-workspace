@@ -1,0 +1,34 @@
+{
+  "evaluated_at": "2026-08-15T16:15:00+08:00",
+  "baseline": "pypdf unique English token set",
+  "engines": {
+    "poppler-26.07.0": {
+      "role": "primary page-aware text and visual conversion",
+      "recall_percent": {
+        "1801.01290v2.pdf": 98.09,
+        "2410.24164v4.pdf": 92.86,
+        "2507.07969v4.pdf": 92.98,
+        "hil-serl-paper.pdf": 99.63
+      }
+    },
+    "markitdown-0.1.7": {
+      "role": "secondary structure and coverage comparator",
+      "recall_percent": {
+        "1801.01290v2.pdf": 47.70,
+        "2410.24164v4.pdf": 85.15,
+        "2507.07969v4.pdf": 35.12,
+        "hil-serl-paper.pdf": 39.47
+      }
+    },
+    "poppler_plus_markitdown_union": {
+      "role": "diagnostic union only; not emitted to avoid duplication",
+      "recall_percent": {
+        "1801.01290v2.pdf": 98.23,
+        "2410.24164v4.pdf": 93.22,
+        "2507.07969v4.pdf": 94.26,
+        "hil-serl-paper.pdf": 99.69
+      }
+    }
+  },
+  "decision": "Use Poppler as the primary converter. Keep MarkItDown as an optional comparator because wholesale merging adds substantial duplicate/noisy text for only 0.06-1.28 percentage points of token recall. Use PDFium for independent visual acceptance and escalate complex/scanned pages to MinerU in Linux/WSL only when thresholds fail."
+}

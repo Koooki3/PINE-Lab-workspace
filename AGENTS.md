@@ -11,3 +11,7 @@ For every user task in every thread that operates in this repository, use `skill
 5. Delete temporary prompt-processing files before finishing. Never alter an existing archived source prompt; create a new version or archive record.
 
 For “更新references知识库” and equivalent requests, also use `skills/manage-references-knowledge/SKILL.md`.
+
+Before reading, summarizing, comparing, or citing any PDF under `references/`, use `skills/translate-paper-pdf-to-md/SKILL.md`. Read the validated corresponding file under `references/Markdown/`; inspect the source PDF only to resolve layout-dependent ambiguity.
+
+Markdown Preview Enhanced is the repository preview authority. Before finishing any task that creates or changes `.md` files, run `python skills/translate-paper-pdf-to-md/scripts/validate_mpe_repository.py --root .` and fix all reported errors.

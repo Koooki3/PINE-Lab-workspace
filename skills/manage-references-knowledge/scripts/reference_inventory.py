@@ -13,8 +13,8 @@ def digest(path: Path) -> str:
 
 def scan(root: Path) -> dict:
     ref, out = root / 'references', {}
-    for p in sorted(ref.rglob('*')):
-        if not p.is_file() or 'Knowledge graph' in p.relative_to(ref).parts or p.suffix.lower() not in SUPPORTED: continue
+    for p in sorted(ref.iterdir()):
+        if not p.is_file() or p.suffix.lower() not in SUPPORTED: continue
         rel = p.relative_to(root).as_posix()
         out[rel] = {'source_id': 'src-' + hashlib.sha1(rel.encode()).hexdigest()[:10], 'sha256': digest(p), 'bytes': p.stat().st_size, 'suffix': p.suffix.lower()}
     return out

@@ -1,8 +1,58 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T05:21:33.512536+00:00",
-  "count": 2,
+  "generated_at": "2026-08-15T10:56:23.406484+00:00",
+  "count": 13,
   "prompts": [
+    {
+      "id": "PROMPT-20260815-160106",
+      "name": "修复 VS Code Markdown 报错与预览失败",
+      "slug": "fix-vscode-markdown-preview-errors",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260815-160106-fix-vscode-markdown-preview-errors.md",
+      "sha256": "9bd87847a63e6ceaeeee6f13779ebd84139e7f1f3e611dbd72df5da00f96eeab",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160107",
+      "name": "检查并预防 Markdown 乱码",
+      "slug": "check-and-prevent-mojibake",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260815-160107-check-and-prevent-mojibake.md",
+      "sha256": "ec83a8cac3748e55a93e5777d12938d66104da9cb12c1db75722d5c6b4b8fd08",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160108",
+      "name": "配置 Markdown Preview Enhanced 默认预览与仓库兼容检查",
+      "slug": "configure-markdown-preview-enhanced-default",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260815-160108-configure-markdown-preview-enhanced-default.md",
+      "sha256": "3d25ecc916c3431c8a6657901e698cdb7f7c97d8977669dbe142165892105fa4",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-182800",
+      "name": "修复双击 Markdown 未默认进入 MPE 预览",
+      "slug": "fix-mpe-double-click-default",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260815-182800-fix-mpe-double-click-default.md",
+      "sha256": "651b9c813890aae6dda111680302deeea82566cb4e1e22f4d7a8e871ae05f524",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-183500",
+      "name": "全仓库规范 Markdown Preview Enhanced 数学格式",
+      "slug": "enforce-mpe-math-format",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260815-183500-enforce-mpe-math-format.md",
+      "sha256": "04fd29b911a30a27ab0c4d28af320c95ed55dee97fbc7240a7b0dd9127b06cc0",
+      "duplicate_of": null
+    },
     {
       "id": "PROMPT-20260815-131701",
       "name": "建立自动提示词仓库技能",
@@ -21,6 +71,66 @@
       "status": "active",
       "path": "prompt-repository/prompts/research/PROMPT-20260815-131700-references-knowledge-management.md",
       "sha256": "02f498b4fc31ef572364b6e825cafda42b685f42ff482f65cd23d49c1ee9d76b",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160100",
+      "name": "将 references PDF 转换为 Markdown 并更新知识工作流",
+      "slug": "pdf-markdown-reference-workflow",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-160100-pdf-markdown-reference-workflow.md",
+      "sha256": "c19414c6570b5ea54daaaab6503ba091dd961f538cb6a67ff68dd6acfd18e5bd",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160101",
+      "name": "补全 PDF 工具链并重新转换核验",
+      "slug": "complete-pdf-toolchain-and-reconvert",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-160101-complete-pdf-toolchain-and-reconvert.md",
+      "sha256": "a2e83745408532af3f6540ac60ea823d7b4b508e4b2897388c15fb2642ef20d1",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160102",
+      "name": "参考 MarkItDown 并完善转换检查与清理",
+      "slug": "compare-pdf-tools-and-cleanup",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-160102-compare-pdf-tools-and-cleanup.md",
+      "sha256": "c3d15ffd9cc40e8fb1bce1e45a46e9e7b4a0119b02055d6e15182e1e1bffc0e4",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160103",
+      "name": "参考 robust-vase PDF-To-MarkDown 技能",
+      "slug": "robust-vase-pdf-skill-reference",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-160103-robust-vase-pdf-skill-reference.md",
+      "sha256": "992fd4f36ee9c9bdc71a86b702748aec46203f704658dd9fc838a3cb00a1c19c",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160104",
+      "name": "设计最优多引擎 PDF 转换方法",
+      "slug": "design-optimal-multi-engine-pdf-conversion",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-160104-design-optimal-multi-engine-pdf-conversion.md",
+      "sha256": "9a2a050f19eae7a4ea92a61a5bd05b5bfe1f7aa57f9c79fd59a6443957c04187",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260815-160105",
+      "name": "优化 PDF 数学公式 LaTeX 转换与知识库导出",
+      "slug": "optimize-latex-formula-conversion",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260815-160105-optimize-latex-formula-conversion.md",
+      "sha256": "de6383ae15a5b3a5947eb10e2ed1e1fd84b01d291d9c7793374980092dcdddaf",
       "duplicate_of": null
     }
   ]
