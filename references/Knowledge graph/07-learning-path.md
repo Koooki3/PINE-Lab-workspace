@@ -28,6 +28,10 @@
 
 目标：形成系统思维。选择一个真实操作任务，设计“预训练先验 + 在线价值优化 + 人类干预 + 低层安全”的方案。必须写出：数据来源、奖励、动作块长度、控制频率、延迟预算、急停、评估协议和失败分类。把未经论文直接验证的组合明确标成假设。
 
+## 阶段 7：openpi 源码实践（2-4 天）
+
+先读 `../../openpi_knowledge/openpi.md`，再按 `../../openpi_knowledge/learning-path.md` 操作。先用 client 与 fake dataset 验证接口和形状，再追踪 `transforms → Policy → model → server/client`；完整 GPU 实验放到官方支持的 Ubuntu/WSL2 Python 3.11 环境，真机前补齐动作限幅、超时与急停。
+
 ## 最终检查题
 
 1. SAC 的熵项、Q-chunking 的行为先验和 HIL-SERL 的人类纠正，分别怎样改变探索？

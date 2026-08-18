@@ -1,0 +1,96 @@
+{
+  "generated_at": "2026-08-18T09:57:49.874780+00:00",
+  "server": {
+    "status": "healthz_passed",
+    "host": "127.0.0.1",
+    "port": 63570,
+    "pid": 12788,
+    "server_class": "openpi.serving.websocket_policy_server.WebsocketPolicyServer"
+  },
+  "client_connection": {
+    "status": "connected_and_metadata_received",
+    "metadata": {
+      "server_type": "openpi.WebsocketPolicyServer",
+      "policy_type": "DeterministicTestPolicy",
+      "action_shape": [
+        10,
+        8
+      ],
+      "model_weights_loaded": false
+    }
+  },
+  "observation_schema": {
+    "observation/exterior_image_1_left": {
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "min": 0.0,
+      "max": 220.0
+    },
+    "observation/wrist_image_left": {
+      "shape": [
+        224,
+        224,
+        3
+      ],
+      "dtype": "uint8",
+      "min": 0.0,
+      "max": 220.0
+    },
+    "observation/joint_position": {
+      "shape": [
+        7
+      ],
+      "dtype": "float32",
+      "min": -0.20000000298023224,
+      "max": 0.20000000298023224
+    },
+    "observation/gripper_position": {
+      "shape": [
+        1
+      ],
+      "dtype": "float32",
+      "min": 0.0,
+      "max": 0.0
+    },
+    "prompt": {
+      "type": "str",
+      "value": "move the end effector safely"
+    }
+  },
+  "action_chunk": {
+    "shape": [
+      10,
+      8
+    ],
+    "dtype": "float32",
+    "min": -0.2485504001379013,
+    "max": 1.0
+  },
+  "video": {
+    "path": "openpi_knowledge/evidence/local_policy_server_test/execution_replay.mp4",
+    "frames": 30,
+    "fps": 10,
+    "bytes": 6960
+  },
+  "latency_ms": {
+    "samples": 30,
+    "mean": 1.9519399998898734,
+    "p95": 4.363185000602229,
+    "min": 0.6998999997449573,
+    "max": 24.346700000023702
+  },
+  "disconnect_safety": {
+    "status": "safe_stop_latched",
+    "reason": "policy_connection_closed_by_client",
+    "zero_action": true
+  },
+  "scope": {
+    "real_websocket_server": true,
+    "real_model_weights": false,
+    "real_robot": false
+  }
+}

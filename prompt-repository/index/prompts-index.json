@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-15T10:56:23.406484+00:00",
-  "count": 13,
+  "generated_at": "2026-08-18T09:58:10.782383+00:00",
+  "count": 22,
   "prompts": [
     {
       "id": "PROMPT-20260815-160106",
@@ -51,6 +51,86 @@
       "status": "active",
       "path": "prompt-repository/prompts/coding/PROMPT-20260815-183500-enforce-mpe-math-format.md",
       "sha256": "04fd29b911a30a27ab0c4d28af320c95ed55dee97fbc7240a7b0dd9127b06cc0",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-164500",
+      "name": "生成 DROID 控制代码中文注释版",
+      "slug": "droid-control-chinese-comments",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260818-164500-droid-control-chinese-comments.md",
+      "sha256": "4a6b3d9be2ff65d363cdd6ac31e5f497a9cd4da20e04fa4e5bb7f61184403f81",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-173000",
+      "name": "构建本机 Policy Server 端到端单测",
+      "slug": "local-policy-server-integration-test",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/coding/PROMPT-20260818-173000-local-policy-server-integration-test.md",
+      "sha256": "95535a26d9314322d970c1c0b3a509208945ad9e4c636097e723177de2fc656f",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-160500",
+      "name": "openpi-client 数组图像实验操作指南",
+      "slug": "openpi-client-experiment-guide",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/education/PROMPT-20260818-160500-openpi-client-experiment-guide.md",
+      "sha256": "b1ae6ca2e9c73435c3c1c69696d062db8513b46f6eb14b0d4a34b7ded6d5dd58",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-161500",
+      "name": "openpi-client WebSocket 假策略回环实验",
+      "slug": "openpi-websocket-loopback",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/education/PROMPT-20260818-161500-openpi-websocket-loopback.md",
+      "sha256": "318086451b17e7b4574fe5664f7594419cc622f5ba99a536242e12df03b6dca6",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-162500",
+      "name": "从客户端实验形成完整 openpi 控制",
+      "slug": "openpi-complete-control-loop",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/education/PROMPT-20260818-162500-openpi-complete-control-loop.md",
+      "sha256": "1237ae72e2c8ad5df5612c96547fc9cdcbb417ed51e772e9a68c78226d5f8412",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-163500",
+      "name": "查找 openpi 完整控制代码参考",
+      "slug": "openpi-control-code-reference",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/education/PROMPT-20260818-163500-openpi-control-code-reference.md",
+      "sha256": "4eb272bca01afa911770533a90a8ea33862ffa603d839dc8e68b6c724503bd9c",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-170000",
+      "name": "DROID 控制一图流",
+      "slug": "droid-control-one-page-flow",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/education/PROMPT-20260818-170000-droid-control-one-page-flow.md",
+      "sha256": "2cc1c201ce402e0a7b680aea2991dec29c61f4f3cf6ec84e0631f4abdebc29b9",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-171500",
+      "name": "学懂 openpi examples 后的实践路线",
+      "slug": "after-openpi-examples-roadmap",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/education/PROMPT-20260818-171500-after-openpi-examples-roadmap.md",
+      "sha256": "3038f9e60937b24bd92d0cf7b16a24a2f5df40841e9af73a6820fdaaa23bb5f2",
       "duplicate_of": null
     },
     {
@@ -131,6 +211,16 @@
       "status": "active",
       "path": "prompt-repository/prompts/research/PROMPT-20260815-160105-optimize-latex-formula-conversion.md",
       "sha256": "de6383ae15a5b3a5947eb10e2ed1e1fd84b01d291d9c7793374980092dcdddaf",
+      "duplicate_of": null
+    },
+    {
+      "id": "PROMPT-20260818-000000",
+      "name": "构建 openpi 知识库、技能与 kooki 环境",
+      "slug": "openpi-knowledge-environment",
+      "version": "1.0.0",
+      "status": "active",
+      "path": "prompt-repository/prompts/research/PROMPT-20260818-000000-openpi-knowledge-environment.md",
+      "sha256": "25f919e7f08cea56cb5d29f59386ff47189498f28cae5c822b1e96638a497313",
       "duplicate_of": null
     }
   ]

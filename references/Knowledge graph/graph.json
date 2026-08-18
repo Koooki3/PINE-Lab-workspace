@@ -17,7 +17,8 @@
     {"id":"pi0-paper","label":"π0","kind":"paper","level":4,"source_id":"src-0c38a99502"},
     {"id":"qchunk-paper","label":"Q-chunking","kind":"paper","level":4,"source_id":"src-6d36731cb8"},
     {"id":"hil-serl-paper","label":"HIL-SERL","kind":"paper","level":4,"source_id":"src-2a910657cd"},
-    {"id":"safe-generalist-adaptation","label":"通用先验的安全在线适配","kind":"synthesis","level":5}
+    {"id":"safe-generalist-adaptation","label":"通用先验的安全在线适配","kind":"synthesis","level":5},
+    {"id":"openpi-implementation","label":"openpi 工程实现","kind":"system","level":5}
   ],
   "edges": [
     {"source":"probability-optimization","target":"mdp-bellman","relation":"requires","why":"期望、条件概率和折扣回报定义决策目标"},
@@ -48,6 +49,8 @@
     {"source":"real-robot-loop","target":"safe-generalist-adaptation","relation":"requires","why":"真实部署需要安全闭环"},
     {"source":"pi0-paper","target":"safe-generalist-adaptation","relation":"enables","why":"提供通用视觉语言动作先验"},
     {"source":"qchunk-paper","target":"safe-generalist-adaptation","relation":"enables","why":"提供块级价值优化机制"},
-    {"source":"hil-serl-paper","target":"safe-generalist-adaptation","relation":"enables","why":"提供人类介入和实机训练范式"}
+    {"source":"hil-serl-paper","target":"safe-generalist-adaptation","relation":"enables","why":"提供人类介入和实机训练范式"},
+    {"source":"pi0-paper","target":"openpi-implementation","relation":"enables","why":"openpi 将 π0 系列的数据、模型和策略接口实现为代码"},
+    {"source":"openpi-implementation","target":"real-robot-loop","relation":"enables","why":"Policy、WebSocket 服务和轻量客户端连接模型与机器人"}
   ]
 }

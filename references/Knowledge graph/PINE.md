@@ -1,7 +1,7 @@
 ---
 title: "PINE 机器人学习 References 知识库与知识图谱"
 schema_version: "1.1"
-generated_at: "2026-08-15T09:36:47.066269+00:00"
+generated_at: "2026-08-18T07:59:57.881977+00:00"
 source_mode: "validated-pdf-derived-markdown-with-canonical-latex"
 math_renderer: "latex-dollar-delimiters"
 ---
@@ -42,6 +42,7 @@ math_renderer: "latex-dollar-delimiters"
 5. 时间抽象：单步动作、动作块、n 步回报与长时程稀疏奖励。
 6. 通用机器人：视觉-语言-动作模型、跨本体数据、流匹配动作专家。
 7. 真实系统：感知、低层控制、安全、奖励、重置、actor-learner 与人类介入。
+8. 工程实现：openpi 的 LeRobot/RLDS 数据管线、π0 系列模型、Policy 封装和远程推理。
 
 ## 当前材料
 
@@ -49,6 +50,7 @@ math_renderer: "latex-dollar-delimiters"
 - `Markdown/2410.24164v4/2410.24164v4.md`（源：`2410.24164v4.pdf`）：π0，以预训练 VLM 加流匹配动作专家建立跨机器人通用策略。[S2]
 - `Markdown/2507.07969v4/2507.07969v4.md`（源：`2507.07969v4.pdf`）：Q-chunking，把动作块直接纳入 TD 学习以改善离线到在线探索和价值传播。[S3]
 - `Markdown/hil-serl-paper/hil-serl-paper.md`（源：`hil-serl-paper.pdf`）：HIL-SERL，把示范、纠正、稀疏奖励、样本高效 RL 和真实机器人基础设施整合为系统。[S4]
+- `../openpi_knowledge/openpi.md`：基于本地 openpi 源码、π0 论文和官方资料的数据层—模型层—部署层中文导读。[S10]
 
 ## 推荐阅读方式
 
@@ -221,6 +223,12 @@ SAC 提供稳定、样本高效的连续动作价值学习基础；HIL-SERL 展�
 - 对动作块检查急停能否中断块执行。
 - 对大模型检查微调数据泄漏、训练/测试场景重合和目标本体数据占比。
 
+## 8. openpi：把论文概念落到代码
+
+仓库新增的 `openpi/` 把 π0 论文中的 VLM、动作专家、流匹配和动作块实现为可训练、可服务的策略系统。其数据层以 LeRobot 为默认入口、以 RLDS/DROID 为专用入口，经字段重排、平台语义变换、归一化和模型变换生成统一观测与动作块；模型层提供 π0、π0-FAST 与 π0.5；部署层用 Policy 封装训练/推理对称变换，并可通过 WebSocket 把 GPU 服务与机器人客户端分离。[S10]
+
+完整中文源码导读、机器可读图谱和环境边界见 `../../openpi_knowledge/openpi.md` 与 `../../openpi_knowledge/graph.json`。特别要区分论文能力与当前开源实现：仓库目前只支持 π0.5 的 flow-matching head；PyTorch 路径不支持 π0-FAST、LoRA、FSDP 和混合精度训练；官方只测试 Ubuntu 22.04。[S10]
+
 ---
 
 <!-- chapter-source: 04-paper-guides.md -->
@@ -330,6 +338,8 @@ flowchart LR
   L --> P[真实机器人闭环]
   O --> P
   K --> P
+  O --> Q[openpi 工程实现]
+  Q --> P
 ```
 
 ## 关键链条解释
@@ -340,6 +350,7 @@ flowchart LR
 4. `动作分块 + TD → Q-chunking`：动作块不只是策略输出格式，也成为 critic 的复合动作和加速价值传播的时间尺度。
 5. `VLM + 跨本体 + 流匹配 → π0`：语义表示、数据规模与精细连续控制三者汇合。
 6. `SAC/RLPD + 示范 + 人类纠正 + 系统工程 → HIL-SERL`：算法必须嵌入奖励、安全、重置与基础设施闭环。
+7. `π0 → openpi → 真实机器人闭环`：论文架构经数据适配、检查点、Policy 和服务协议落到工程系统。
 
 ## 综合推论节点
 
@@ -370,6 +381,8 @@ flowchart LR
 [S8] HIL-SERL official project and code pages. https://hil-serl.github.io/ ; https://github.com/rail-berkeley/hil-serl
 
 [S9] Open X-Embodiment Collaboration. *Open X-Embodiment: Robotic Learning Datasets and RT-X Models*. Official project page. https://robotics-transformer-x.github.io/
+
+[S10] Physical Intelligence. *openpi*. Official repository and local Koooki3 fork at commit `15a9616a00943ada6c20a0f158e3adb39df2ccac`. Local code: `../openpi/`; local knowledge layer: `../openpi_knowledge/`; official repository: https://github.com/Physical-Intelligence/openpi ; π0.5 paper: https://arxiv.org/abs/2504.16054 ; FAST: https://www.pi.website/research/fast (accessed 2026-08-18).
 
 ## 证据使用规则
 
@@ -411,6 +424,10 @@ flowchart LR
 ## 阶段 6：综合设计（1-2 天）
 
 目标：形成系统思维。选择一个真实操作任务，设计“预训练先验 + 在线价值优化 + 人类干预 + 低层安全”的方案。必须写出：数据来源、奖励、动作块长度、控制频率、延迟预算、急停、评估协议和失败分类。把未经论文直接验证的组合明确标成假设。
+
+## 阶段 7：openpi 源码实践（2-4 天）
+
+先读 `../../openpi_knowledge/openpi.md`，再按 `../../openpi_knowledge/learning-path.md` 操作。先用 client 与 fake dataset 验证接口和形状，再追踪 `transforms → Policy → model → server/client`；完整 GPU 实验放到官方支持的 Ubuntu/WSL2 Python 3.11 环境，真机前补齐动作限幅、超时与急停。
 
 ## 最终检查题
 

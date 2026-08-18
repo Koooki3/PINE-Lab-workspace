@@ -10,5 +10,7 @@
   "markdown-preview-enhanced.mathInlineDelimiters": [["$", "$"]],
   "markdown-preview-enhanced.mathBlockDelimiters": [["$$", "$$"]],
   "markdown-preview-enhanced.liveUpdate": true,
-  "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": true
+  "markdown-preview-enhanced.hideDefaultVSCodeMarkdownPreviewButtons": true,
+  "python-envs.defaultEnvManager": "ms-python.python:conda",
+  "python-envs.defaultPackageManager": "ms-python.python:conda"
 }

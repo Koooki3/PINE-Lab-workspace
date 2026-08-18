@@ -20,6 +20,8 @@
 
 [S9] Open X-Embodiment Collaboration. *Open X-Embodiment: Robotic Learning Datasets and RT-X Models*. Official project page. https://robotics-transformer-x.github.io/
 
+[S10] Physical Intelligence. *openpi*. Official repository and local Koooki3 fork at commit `15a9616a00943ada6c20a0f158e3adb39df2ccac`. Local code: `../openpi/`; local knowledge layer: `../openpi_knowledge/`; official repository: https://github.com/Physical-Intelligence/openpi ; π0.5 paper: https://arxiv.org/abs/2504.16054 ; FAST: https://www.pi.website/research/fast (accessed 2026-08-18).
+
 ## 证据使用规则
 
 - 论文方法、数字和实验边界首先引用本地原文。
